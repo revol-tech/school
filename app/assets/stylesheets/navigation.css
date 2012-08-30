@@ -50,7 +50,7 @@ list-style:none;
 display:inline;
 }
 
-.nav_content{
+#navigation_content ul li a{
 color:#fff;
 padding:10px;
 font: 12px geneva, arial, helvetica, sans-serif;

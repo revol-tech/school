@@ -1,5 +1,9 @@
 Dummyschool::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   get "pages/index"
 
   get "pages/home"
