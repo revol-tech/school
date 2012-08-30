@@ -1,0 +1,54 @@
+#admission_content{
+width:960px;
+display:block;
+margin:0 auto;
+}
+
+.admission_header{
+width:920px;
+padding:20px;
+display:block;
+float:left;
+background-color:#fff;
+}
+
+.admission_header label{
+width:100%;
+display:block;
+float:left;
+font:30px geneva, arial, helvetica, sans-serif;
+color:#000;
+}
+
+.admission_header h2{
+width:100%;
+display:block;
+float:left;
+font:25px geneva, arial, helvetica, sans-serif;
+color:#C343A0;
+margin:10px 0 10px 0;
+}
+
+.admission_header p{
+display:block;
+float:left;
+font:20px geneva, arial, helvetica, sans-serif;
+color:#000;
+}
+
+.admission_header p a{
+display:block;
+float:left;
+font:20px geneva, arial, helvetica, sans-serif;
+color:#C343A0;
+text-decoration:underline;
+}
+
+
+.admission_header p a:hover{
+color: 	 	#FF1493;
+text-decoration:none;
+}
+
+
+

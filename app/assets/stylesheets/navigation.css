@@ -1,0 +1,95 @@
+#header{
+width:100%;
+display:block;
+height:150px;
+}
+
+#navigation{
+width:100%;
+display:block;
+margin:0 auto;
+height:150px;
+background-color:#000;
+position:fixed;
+z-index:99999;
+}
+
+#main_nav{
+width:960px;
+display:block;
+margin:0 auto;
+}
+
+#college_logo{
+width:193px;
+height:49px;
+float:left;
+display:block;
+margin:20px 0 0 0;
+}
+
+#college_logo a{
+text-decoration:none;
+}
+
+
+
+#navigation_content{
+width:660px;
+float:right;
+display:block;
+height:150px;
+}
+
+#navigation_content ul{
+margin:20px 0 50px 0;
+list-style:none;
+}
+
+#navigation_content li{
+display:inline;
+}
+
+.nav_content{
+color:#fff;
+padding:10px;
+font: 12px geneva, arial, helvetica, sans-serif;
+
+}
+
+#search_button{
+width:155px;
+float:right;
+display:block;
+}
+
+.Btn_search{
+width:16px;
+height:16px;
+float:right;
+position:relative;
+bottom:20px;
+left:-5px;
+}
+
+.search{
+float:right;
+width:150px;
+}
+
+#sub_nav{
+display:block;
+float:right:width:600px;
+float:right;
+}
+
+#sub_nav ol{
+list-style:none;
+}
+
+.sub_nav_content{
+color:#fff;
+margin:0 0 0 30px;
+text-transform:uppercase;
+font:18px geneva, arial, helvetica, sans-serif;
+}

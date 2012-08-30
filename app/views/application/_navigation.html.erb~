@@ -1,0 +1,30 @@
+<div id="header">
+<div id="navigation">
+	<div id="main_nav">
+					<div id="college_logo">
+							<label>D</label>
+							<h2>d&nbsp;&nbsp;u&nbsp;&nbsp;m&nbsp;&nbsp;m&nbsp;&nbsp;y</h2></br>
+							<p>College of Management and Arts</p>
+					</div>
+					<div id="navigation_content">
+								<ul>
+											<li><a href="/pages/index" class="nav_content">home</a></li>
+											<li><a href="/pages/aboutus" class="nav_content">aboutus</a></li>
+											<li><a href="#" class="nav_content">news</a></li>
+											<li><a href="#" class="nav_content">gallery</a></li>
+											<li><a href="#" class="nav_content">feedback</a></li>
+										<li><a href="#" class="nav_content">findingus</a></li>
+											<input type="text" value="" class="search">
+								</ul>
+						<div id="sub_nav">
+								<ol>
+											<li><a href="#" class="sub_nav_content">program & faculty</a></li>
+											<li><a href="#" class="sub_nav_content">life @ dcma</a></li>
+											<li><a href="#" class="sub_nav_content" >admission</a></li>
+								</ol>
+					</div>
+					</div>
+					
+	</div>
+</div>
+</div>

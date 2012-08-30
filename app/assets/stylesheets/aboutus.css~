@@ -1,0 +1,23 @@
+#aboutus_content{
+width:960px;
+float:left;
+display:block;
+margin:0 auto;
+background-color:#000;
+}
+
+.aboutus_header{
+width:920px;
+float:left;
+padding:20px;
+}
+
+.aboutus_header h2{
+font:25px "arial";
+color:#C343A0;
+}
+
+.aboutus_header p{
+font:15px "arial";
+color:#fff;
+}

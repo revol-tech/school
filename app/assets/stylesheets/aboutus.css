@@ -1,0 +1,24 @@
+#aboutus_content{
+width:960px;
+display:block;
+margin:0 auto;
+
+}
+
+.aboutus_header{
+width:920px;
+float:left;
+padding:20px;
+background-color:#fff;
+}
+
+.aboutus_header h2{
+font:20px geneva, arial, helvetica, sans-serif;
+color:#C343A0;
+}
+
+.aboutus_header p{
+font:15px geneva, arial, helvetica, sans-serif;
+color:#000;
+margin:10px 0 0 0;
+}
