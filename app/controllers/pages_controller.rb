@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def index
     @menu=Menu.all
+    @banner=Banner.all
   end
 
   def home
@@ -8,6 +9,7 @@ class PagesController < ApplicationController
 
   def aboutus
     @menu=Menu.all
+
   end
 
   def news

@@ -97402,3 +97402,3049 @@ Served asset /active_admin.css - 304 Not Modified (11ms)
 
 Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 13:54:50 +0545
 Served asset /active_admin.js - 304 Not Modified (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:00:00 +0545
+
+NameError (uninitialized constant Banner::ImageUploader):
+  app/models/banner.rb:3:in `<class:Banner>'
+  app/models/banner.rb:1:in `<top (required)>'
+  app/admin/banners.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:10:44 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (203.2ms)
+Completed 200 OK in 247ms (Views: 206.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:10:45 +0545
+Served asset /active_admin.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:10:45 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:10:48 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (81.8ms)
+Completed 500 Internal Server Error in 95ms
+
+ActionView::Template::Error (undefined method `published_at' for #<Banner:0x9a8290c>):
+    1: render renderer_for(:new)
+  app/admin/banners.rb:7:in `block (3 levels) in <top (required)>'
+  app/admin/banners.rb:5:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:11:23 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (84.0ms)
+Completed 500 Internal Server Error in 136ms
+
+ActionView::Template::Error (undefined method `body' for #<Banner:0xa563b14>):
+    1: render renderer_for(:new)
+  app/admin/banners.rb:10:in `block (3 levels) in <top (required)>'
+  app/admin/banners.rb:9:in `block (2 levels) in <top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:11:37 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (40.2ms)
+Completed 200 OK in 149ms (Views: 43.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:11:37 +0545
+Served asset /active_admin.css - 304 Not Modified (70ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:11:37 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:11:48 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"dsfjk", "image"=>"sdkfal"}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 08:26:48 UTC +00:00], ["image", "sdkfal"], ["title", "dsfjk"], ["updated_at", Thu, 30 Aug 2012 08:26:48 UTC +00:00]]
+  [1m[35m (178.0ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners/1
+Completed 302 Found in 200ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/banners/1" for 127.0.0.1 at 2012-08-30 14:11:48 +0545
+Processing by Admin::BannersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.3ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Banner' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Banner' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (97.3ms)
+Completed 200 OK in 107ms (Views: 100.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:11:48 +0545
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:11:48 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:11:52 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.3ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (229.2ms)
+Completed 200 OK in 237ms (Views: 231.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:11:52 +0545
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:11:52 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/admin/banners/1" for 127.0.0.1 at 2012-08-30 14:11:58 +0545
+Processing by Admin::BannersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Banner' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Banner' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (89.6ms)
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:11:58 +0545
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:11:58 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin/banners/1/edit" for 127.0.0.1 at 2012-08-30 14:12:04 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (105.5ms)
+Completed 200 OK in 116ms (Views: 108.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:12:05 +0545
+Served asset /active_admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:12:05 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started PUT "/admin/banners/1" for 127.0.0.1 at 2012-08-30 14:12:09 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"dsfjka", "image"=>"sdkfal"}, "commit"=>"Update Banner", "id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "banners" SET "title" = 'dsfjka', "updated_at" = '2012-08-30 08:27:09.128719' WHERE "banners"."id" = 1
+  [1m[36m (358.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3002/admin/banners/1
+Completed 302 Found in 379ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/banners/1" for 127.0.0.1 at 2012-08-30 14:12:09 +0545
+Processing by Admin::BannersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Banner' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = 'Banner' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from realtime at /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/show.html.arb (92.3ms)
+Completed 200 OK in 98ms (Views: 95.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:12:09 +0545
+Served asset /active_admin.css - 304 Not Modified (65ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:12:09 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:12:13 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "banners" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (168.6ms)
+Completed 200 OK in 174ms (Views: 170.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:12:13 +0545
+Served asset /active_admin.css - 304 Not Modified (70ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:12:13 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:14:34 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (230.7ms)
+Completed 200 OK in 274ms (Views: 233.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:14:34 +0545
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:14:34 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:14:35 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:14:35 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (3ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:14:36 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (130.6ms)
+Completed 200 OK in 138ms (Views: 134.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:14:37 +0545
+Served asset /active_admin.css - 304 Not Modified (65ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:14:37 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:14:49 +0545
+
+NameError (uninitialized constant Banner::ImageUploader):
+  app/models/banner.rb:3:in `<class:Banner>'
+  app/models/banner.rb:1:in `<top (required)>'
+  app/admin/banners.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:15:20 +0545
+
+NameError (uninitialized constant Banner::ImageUploader):
+  app/models/banner.rb:3:in `<class:Banner>'
+  app/models/banner.rb:1:in `<top (required)>'
+  app/admin/banners.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:17:51 +0545
+
+ActionController::RoutingError (No route matches [GET] "/admin/banners/new"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:18:30 +0545
+
+NameError (uninitialized constant Banner::ImageUploader):
+  app/models/banner.rb:3:in `<class:Banner>'
+  app/models/banner.rb:1:in `<top (required)>'
+  app/admin/banners.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:19:24 +0545
+
+NameError (uninitialized constant Banner::ImageUploader):
+  app/models/banner.rb:3:in `<class:Banner>'
+  app/models/banner.rb:1:in `<top (required)>'
+  app/admin/banners.rb:1:in `<top (required)>'
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:19:59 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (103.9ms)
+Completed 200 OK in 156ms (Views: 107.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:19:59 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (94.6ms)
+Completed 200 OK in 100ms (Views: 97.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:19:59 +0545
+Served asset /active_admin.css - 304 Not Modified (60ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:19:59 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:20:11 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa4a1a14 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-1d5pa47>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 08:35:11 UTC +00:00], ["image", #<ActionDispatch::Http::UploadedFile:0xa4a1a14 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-1d5pa47>>], ["title", "hewl"], ["updated_at", Thu, 30 Aug 2012 08:35:11 UTC +00:00]]
+NoMethodError: undefined method `name' for nil:NilClass: INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms
+
+ActiveRecord::StatementInvalid (NoMethodError: undefined method `name' for nil:NilClass: INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)):
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:25:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `accept'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:377:in `block in dump_ivars'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:375:in `each'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:375:in `dump_ivars'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:124:in `visit_Object'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `accept'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:66:in `push'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych.rb:189:in `dump'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/quoting.rb:74:in `type_cast'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:202:in `type_cast'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:259:in `block (2 levels) in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:258:in `map'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:258:in `block in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:242:in `exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:63:in `exec_insert'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:90:in `insert'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `insert'
+  activerecord (3.2.8) lib/active_record/relation.rb:66:in `insert'
+  activerecord (3.2.8) lib/active_record/persistence.rb:366:in `create'
+  activerecord (3.2.8) lib/active_record/timestamp.rb:57:in `create'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:268:in `block in create'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:403:in `_run__747051173__create__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_create_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:268:in `create'
+  activerecord (3.2.8) lib/active_record/persistence.rb:347:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `block in create_or_update'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:403:in `_run__747051173__save__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_save_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/persistence.rb:84:in `save'
+  activerecord (3.2.8) lib/active_record/validations.rb:50:in `save'
+  activerecord (3.2.8) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block (2 levels) in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:295:in `block in with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:208:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:293:in `with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:252:in `rollback_active_record_state!'
+  activerecord (3.2.8) lib/active_record/transactions.rb:240:in `save'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:28:in `block in save_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_save_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:27:in `save_resource'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:22:in `block in create_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_create_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:21:in `create_resource'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:33:in `create'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/actions.rb:48:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__461630819__process_action__655501814__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__501031053__call__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:22:31 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (88.9ms)
+Completed 200 OK in 200ms (Views: 93.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:22:31 +0545
+Served asset /active_admin.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:22:31 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:22:33 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa135448 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-rgy7wa>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 30 Aug 2012 08:37:33 UTC +00:00], ["image", #<ActionDispatch::Http::UploadedFile:0xa135448 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-rgy7wa>>], ["title", "hewl"], ["updated_at", Thu, 30 Aug 2012 08:37:33 UTC +00:00]]
+NoMethodError: undefined method `name' for nil:NilClass: INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 10ms
+
+ActiveRecord::StatementInvalid (NoMethodError: undefined method `name' for nil:NilClass: INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)):
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:25:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `accept'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:377:in `block in dump_ivars'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:375:in `each'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:375:in `dump_ivars'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:124:in `visit_Object'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `accept'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:66:in `push'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych.rb:189:in `dump'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/quoting.rb:74:in `type_cast'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:202:in `type_cast'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:259:in `block (2 levels) in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:258:in `map'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:258:in `block in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:242:in `exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:63:in `exec_insert'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:90:in `insert'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `insert'
+  activerecord (3.2.8) lib/active_record/relation.rb:66:in `insert'
+  activerecord (3.2.8) lib/active_record/persistence.rb:366:in `create'
+  activerecord (3.2.8) lib/active_record/timestamp.rb:57:in `create'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:268:in `block in create'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:403:in `_run__747051173__create__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_create_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:268:in `create'
+  activerecord (3.2.8) lib/active_record/persistence.rb:347:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `block in create_or_update'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:403:in `_run__747051173__save__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_save_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/persistence.rb:84:in `save'
+  activerecord (3.2.8) lib/active_record/validations.rb:50:in `save'
+  activerecord (3.2.8) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block (2 levels) in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:295:in `block in with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:208:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:293:in `with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:252:in `rollback_active_record_state!'
+  activerecord (3.2.8) lib/active_record/transactions.rb:240:in `save'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:28:in `block in save_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_save_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:27:in `save_resource'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:22:in `block in create_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_create_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:21:in `create_resource'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:33:in `create'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/actions.rb:48:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__461630819__process_action__655501814__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__501031053__call__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:23:21 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa0e220c @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-a81abo>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 30 Aug 2012 08:38:21 UTC +00:00], ["image", #<ActionDispatch::Http::UploadedFile:0xa0e220c @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-a81abo>>], ["title", "hewl"], ["updated_at", Thu, 30 Aug 2012 08:38:21 UTC +00:00]]
+NoMethodError: undefined method `name' for nil:NilClass: INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 55ms
+
+ActiveRecord::StatementInvalid (NoMethodError: undefined method `name' for nil:NilClass: INSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)):
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:25:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:27:in `block in initialize'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `yield'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `default'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `accept'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:377:in `block in dump_ivars'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:375:in `each'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:375:in `dump_ivars'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:124:in `visit_Object'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:102:in `accept'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb:66:in `push'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/psych.rb:189:in `dump'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/quoting.rb:74:in `type_cast'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:202:in `type_cast'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:259:in `block (2 levels) in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:258:in `map'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:258:in `block in exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite_adapter.rb:242:in `exec_query'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:63:in `exec_insert'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:90:in `insert'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/query_cache.rb:14:in `insert'
+  activerecord (3.2.8) lib/active_record/relation.rb:66:in `insert'
+  activerecord (3.2.8) lib/active_record/persistence.rb:366:in `create'
+  activerecord (3.2.8) lib/active_record/timestamp.rb:57:in `create'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:268:in `block in create'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:403:in `_run__747051173__create__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_create_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:268:in `create'
+  activerecord (3.2.8) lib/active_record/persistence.rb:347:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `block in create_or_update'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:403:in `_run__747051173__save__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_save_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  activerecord (3.2.8) lib/active_record/callbacks.rb:264:in `create_or_update'
+  activerecord (3.2.8) lib/active_record/persistence.rb:84:in `save'
+  activerecord (3.2.8) lib/active_record/validations.rb:50:in `save'
+  activerecord (3.2.8) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block (2 levels) in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:295:in `block in with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:208:in `transaction'
+  activerecord (3.2.8) lib/active_record/transactions.rb:293:in `with_transaction_returning_status'
+  activerecord (3.2.8) lib/active_record/transactions.rb:241:in `block in save'
+  activerecord (3.2.8) lib/active_record/transactions.rb:252:in `rollback_active_record_state!'
+  activerecord (3.2.8) lib/active_record/transactions.rb:240:in `save'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:28:in `block in save_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_save_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:27:in `save_resource'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:22:in `block in create_resource'
+  activeadmin (0.4.4) lib/active_admin/callbacks.rb:78:in `run_create_callbacks'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:21:in `create_resource'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:33:in `create'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/actions.rb:48:in `create'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__461630819__process_action__655501814__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__501031053__call__153569363__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:24:41 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0x9ebd864 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-gp3c59>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 39ms
+
+NameError (uninitialized constant ImageUploader):
+  app/admin/banners.rb:20:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:25:01 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa39d230 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-9crbe1>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 39ms
+
+NameError (uninitialized constant ImageUploader):
+  app/admin/banners.rb:20:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:25:28 +0545
+
+SyntaxError (/home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:4: syntax error, unexpected keyword_do_block, expecting ')'
+    form(:html => { :multipart => true } do |f|
+                                           ^
+/home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+      f.inputs "Details" do
+                ^
+/home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:5: syntax error, unexpected keyword_do, expecting keyword_end
+/home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:11: syntax error, unexpected keyword_end, expecting $end):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:25:51 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa8b9d2c @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-s2tlbz>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 41ms
+
+NameError (uninitialized constant ImageUploader):
+  app/admin/banners.rb:20:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:27:27 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa84f8c8 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-7uoabh>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 382817ms
+
+NameError (uninitialized constant ImageUploader):
+  app/admin/banners.rb:21:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:36:13 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xb573504 @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-7a1e9c>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 10338ms
+
+NameError (uninitialized constant ImageUploader):
+  app/admin/banners.rb:21:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:36:28 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hewl", "image"=>#<ActionDispatch::Http::UploadedFile:0xa242a5c @original_filename="anarchy000.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"anarchy000.gif\"\r\nContent-Type: image/gif\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-7195-1maenqt>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 127496ms
+
+NameError (uninitialized constant ImageUploader):
+  app/admin/banners.rb:21:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-08-30 14:38:55 +0545
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/dashboard/index.html.arb (73.2ms)
+Completed 200 OK in 225ms (Views: 127.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:38:55 +0545
+Served asset /active_admin.css - 304 Not Modified (63ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:38:55 +0545
+Served asset /active_admin.js - 304 Not Modified (20ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:38:59 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "banners" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (411.2ms)
+Completed 200 OK in 426ms (Views: 413.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:38:59 +0545
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:38:59 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:39:00 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:39:00 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (2ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:39:02 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (91.0ms)
+Completed 200 OK in 99ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:39:02 +0545
+Served asset /active_admin.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:39:02 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:39:09 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x9fd8140 @original_filename="547133_3283272320123_1217065613_46756651_112646260_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"547133_3283272320123_1217065613_46756651_112646260_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-oj5s79>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 15064ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/admin/banners.rb:22:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:40:01 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0xa4d1480 @original_filename="547133_3283272320123_1217065613_46756651_112646260_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"547133_3283272320123_1217065613_46756651_112646260_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-huewxv>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 47915ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/admin/banners.rb:22:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:40:53 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0xb866d60 @original_filename="547133_3283272320123_1217065613_46756651_112646260_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"547133_3283272320123_1217065613_46756651_112646260_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-3ns9aw>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 3472ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/uploaders/image_uploader.rb:20:in `store_dir'
+  app/admin/banners.rb:22:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:41:36 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"dsgsd", "image"=>#<ActionDispatch::Http::UploadedFile:0xa79ddd0 @original_filename="547133_3283272320123_1217065613_46756651_112646260_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"547133_3283272320123_1217065613_46756651_112646260_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-vqxd21>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 4977ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/uploaders/image_uploader.rb:20:in `store_dir'
+  app/admin/banners.rb:22:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:41:50 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"dsgsd", "image"=>#<ActionDispatch::Http::UploadedFile:0x91dd928 @original_filename="547133_3283272320123_1217065613_46756651_112646260_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"547133_3283272320123_1217065613_46756651_112646260_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-l6vufo>>}, "commit"=>"Create Banner"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 247247ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/uploaders/image_uploader.rb:20:in `store_dir'
+  app/admin/banners.rb:22:in `create'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:46:02 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"dsgsd", "image"=>#<ActionDispatch::Http::UploadedFile:0xb89497c @original_filename="547133_3283272320123_1217065613_46756651_112646260_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"547133_3283272320123_1217065613_46756651_112646260_n.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-1thwtr3>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 09:01:17 UTC +00:00], ["image", "/uploads/547133_3283272320123_1217065613_46756651_112646260_n.jpg"], ["title", "dsgsd"], ["updated_at", Thu, 30 Aug 2012 09:01:17 UTC +00:00]]
+  [1m[35m (275.8ms)[0m  commit transaction
+Completed 500 Internal Server Error in 14926ms
+
+ActionView::MissingTemplate (Missing template admin/banners/create, active_admin/resource/create, active_admin/base/create, inherited_resources/base/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :arb, :coffee]}. Searched in:
+  * "/home/julfiquar/Documents/projects/schools/school/app/views"
+  * "/home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views"
+  * "/home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/kaminari-0.13.0/app/views"
+  * "/home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/devise-2.1.2/app/views"
+):
+  actionpack (3.2.8) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.8) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__540923431__process_action__343676054__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__471734769__call__918627757__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:47:33 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (212.2ms)
+Completed 200 OK in 220ms (Views: 214.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:48:05 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "banners" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (174.9ms)
+Completed 200 OK in 279ms (Views: 178.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:48:05 +0545
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:48:05 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:48:06 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:48:06 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:49:50 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (217.4ms)
+Completed 200 OK in 261ms (Views: 220.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:49:51 +0545
+Served asset /active_admin.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:49:51 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:49:51 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:49:51 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 14:49:58 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (98.4ms)
+Completed 200 OK in 109ms (Views: 104.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:49:59 +0545
+Served asset /active_admin.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:49:59 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 14:50:11 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hello", "image"=>#<ActionDispatch::Http::UploadedFile:0xae689f8 @original_filename="royal-enfield-bullet-electra-350cc.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"royal-enfield-bullet-electra-350cc.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-mvwx16>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 09:05:17 UTC +00:00], ["image", "/uploads/images/royal-enfield-bullet-electra-350cc.jpg"], ["title", "hello"], ["updated_at", Thu, 30 Aug 2012 09:05:17 UTC +00:00]]
+  [1m[35m (239.5ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 6822ms (ActiveRecord: 240.5ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:50:18 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.3ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (161.5ms)
+Completed 200 OK in 169ms (Views: 165.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:50:18 +0545
+Served asset /active_admin.css - 304 Not Modified (70ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:50:18 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:50:19 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:50:19 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/3/edit" for 127.0.0.1 at 2012-08-30 14:50:25 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.3ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", 3]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (93.8ms)
+Completed 200 OK in 102ms (Views: 96.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:50:25 +0545
+Served asset /active_admin.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:50:25 +0545
+Served asset /active_admin.js - 304 Not Modified (6ms)
+
+
+Started PUT "/admin/banners/3" for 127.0.0.1 at 2012-08-30 14:50:33 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hello", "image"=>#<ActionDispatch::Http::UploadedFile:0xb8927e4 @original_filename="ktm-200-duke-5_460x0w.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"ktm-200-duke-5_460x0w.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-19yg6lm>>}, "commit"=>"Update Banner", "id"=>"3"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 500 Internal Server Error in 6ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: title, image):
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
+  activemodel (3.2.8) lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
+  activerecord (3.2.8) lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/callbacks.rb:38:in `update_resource'
+  inherited_resources (1.3.1) lib/inherited_resources/actions.rb:45:in `update'
+  activeadmin (0.4.4) lib/active_admin/resource_controller/actions.rb:56:in `update'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:447:in `_run__540923431__process_action__919753766__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.1) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__471734769__call__918627757__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started PUT "/admin/banners/3" for 127.0.0.1 at 2012-08-30 14:52:31 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hello", "image"=>#<ActionDispatch::Http::UploadedFile:0xb03a164 @original_filename="ktm-200-duke-5_460x0w.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"ktm-200-duke-5_460x0w.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-2q6z3q>>}, "commit"=>"Update Banner", "id"=>"3"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 46ms
+
+NoMethodError (undefined method `title=' for nil:NilClass):
+  app/admin/banners.rb:33:in `update'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started PUT "/admin/banners/3" for 127.0.0.1 at 2012-08-30 14:53:04 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hello", "image"=>#<ActionDispatch::Http::UploadedFile:0xb577ec4 @original_filename="ktm-200-duke-5_460x0w.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"ktm-200-duke-5_460x0w.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-1wg386b>>}, "commit"=>"Update Banner", "id"=>"3"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 68636ms
+
+NoMethodError (undefined method `title=' for nil:NilClass):
+  app/admin/banners.rb:33:in `update'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started PUT "/admin/banners/3" for 127.0.0.1 at 2012-08-30 14:54:13 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hello", "image"=>#<ActionDispatch::Http::UploadedFile:0xb6f28a8 @original_filename="ktm-200-duke-5_460x0w.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"ktm-200-duke-5_460x0w.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-bpkdht>>}, "commit"=>"Update Banner", "id"=>"3"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "banners" SET "image" = '/uploads/images/ktm-200-duke-5_460x0w.jpg', "updated_at" = '2012-08-30 09:09:13.305509' WHERE "banners"."id" = 3
+  [1m[36m (230.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 342ms (ActiveRecord: 231.8ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:54:13 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "banners" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (163.1ms)
+Completed 200 OK in 174ms (Views: 166.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:54:13 +0545
+Served asset /active_admin.css - 304 Not Modified (68ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:54:13 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:54:14 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:54:14 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/3/edit" for 127.0.0.1 at 2012-08-30 14:54:18 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", 3]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (86.7ms)
+Completed 200 OK in 95ms (Views: 89.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:54:19 +0545
+Served asset /active_admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:54:19 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started PUT "/admin/banners/3" for 127.0.0.1 at 2012-08-30 14:54:28 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"hello", "image"=>#<ActionDispatch::Http::UploadedFile:0xaabb5f8 @original_filename="nec.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"nec.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-105a187>>}, "commit"=>"Update Banner", "id"=>"3"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "banners" SET "image" = '/uploads/images/nec.jpg', "updated_at" = '2012-08-30 09:09:28.719839' WHERE "banners"."id" = 3[0m
+  [1m[35m (160.3ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 168ms (ActiveRecord: 161.2ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 14:54:28 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (216.4ms)
+Completed 200 OK in 225ms (Views: 221.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 14:54:29 +0545
+Served asset /active_admin.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 14:54:29 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 14:54:29 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 14:54:29 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:10:26 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.3ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (2.6ms)
+  Rendered application/_upperslider.html.erb (22.6ms)
+  Rendered pages/index.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined local variable or method `banner' for #<#<Class:0xb57ccd0>:0xb57b3d0>):
+    101: 				    <div style="left: -637px;" class="slider">
+    102: 				    <% @banner.each do|t| %>
+    103: 										 <div class="image toggle_info">
+    104: 										     <%= image_tag "#{banner.image}", :class=>"upper_images"%>
+    105: 
+    106: 						            <div class="caption info" >
+    107: 						            <div class="display_1"></div>
+  app/views/application/_upperslider.html.erb:104:in `block in _app_views_application__upperslider_html_erb__587348597_92270420'
+  app/views/application/_upperslider.html.erb:102:in `each'
+  app/views/application/_upperslider.html.erb:102:in `_app_views_application__upperslider_html_erb__587348597_92270420'
+  app/views/pages/index.html.erb:5:in `_app_views_pages_index_html_erb__937160295_95147160'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:11:11 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.8ms)
+  Rendered application/_upperslider.html.erb (170568.9ms)
+  Rendered pages/index.html.erb within layouts/application (170575.2ms)
+Completed 500 Internal Server Error in 170581ms
+
+ActionView::Template::Error (undefined local variable or method `banner' for #<#<Class:0xb57ccd0>:0xb720a8c>):
+    103: 				    <% @banner.each do|t| %>
+    104: 
+    105: 										 <div class="image toggle_info">
+    106: 										     <%= image_tag "#{t.image}", :class=>"upper_images"%>
+    107: 
+    108: 						            <div class="caption info" >
+    109: 						            <div class="display_1"></div>
+  app/views/application/_upperslider.html.erb:106:in `block in _app_views_application__upperslider_html_erb__587348597_96140340'
+  app/views/application/_upperslider.html.erb:103:in `each'
+  app/views/application/_upperslider.html.erb:103:in `_app_views_application__upperslider_html_erb__587348597_96140340'
+  app/views/pages/index.html.erb:5:in `_app_views_pages_index_html_erb__937160295_95147160'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:14:01 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.5ms)
+  Rendered application/_upperslider.html.erb (31.2ms)
+  Rendered application/_lowerslider.html.erb (2.3ms)
+  Rendered application/_footer.html.erb (0.9ms)
+  Rendered pages/index.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 164ms (Views: 158.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:01 +0545
+Served asset /app.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/aboutus.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:01 +0545
+Served asset /aboutus.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/lowerslider.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:01 +0545
+Served asset /lowerslider.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admission.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:01 +0545
+Served asset /admission.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /footer.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/feedback.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /feedback.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /navigation.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /jquery-ui.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /active_admin/application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /active_admin/base.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /active_admin.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /app.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/lowerslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /lowerslider.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jcarousellite_1.0.1.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /jcarousellite_1.0.1.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/upperslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /upperslider.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/sdkfal" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /sdkfal - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/sdkfal"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (54.2ms)
+
+
+Started GET "/assets/dummy_logo.png" for 127.0.0.1 at 2012-08-30 15:14:02 +0545
+Served asset /dummy_logo.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/search_Btn.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /search_Btn.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/display_Bg_1.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /display_Bg_1.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/Temp-1_13.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /Temp-1_13.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comma_1_bg.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /comma_1_bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sdkfal" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /sdkfal - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/sdkfal"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/julfiquar/.rvm/rubies/ruby-1.9.3-p0/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/students_2.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /students_2.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/school_Building.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /school_Building.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_1.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /student_1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/notice_Board.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /notice_Board.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/books.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /books.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/BW.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /BW.png - 304 Not Modified (20ms)
+
+
+Started GET "/assets/Btn_1_Bg.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /Btn_1_Bg.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/arrow_1.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /arrow_1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/display_2_bg.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /display_2_bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/Text_Slider_Bg.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /Text_Slider_Bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/arrow_Up.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /arrow_Up.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/social_Media.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /social_Media.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/arrow_down.png" for 127.0.0.1 at 2012-08-30 15:14:03 +0545
+Served asset /arrow_down.png - 304 Not Modified (1ms)
+
+
+Started GET "/admin/banners/3/edit" for 127.0.0.1 at 2012-08-30 15:18:14 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", 3]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (101.3ms)
+Completed 200 OK in 136ms (Views: 104.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:18:14 +0545
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:18:14 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started PUT "/admin/banners/3" for 127.0.0.1 at 2012-08-30 15:18:47 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"I love you", "image"=>#<ActionDispatch::Http::UploadedFile:0xaeb17d4 @original_filename="Banner_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"Banner_1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-nop19g>>}, "commit"=>"Update Banner", "id"=>"3"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "banners" SET "title" = 'I love you', "image" = '/uploads/images/Banner_1.png', "updated_at" = '2012-08-30 09:33:47.142504' WHERE "banners"."id" = 3
+  [1m[36m (192.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 207ms (ActiveRecord: 193.6ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 15:18:47 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "banners" 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mBanner Load (0.2ms)[0m  SELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (167.2ms)
+Completed 200 OK in 176ms (Views: 169.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:18:47 +0545
+Served asset /active_admin.css - 304 Not Modified (68ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:18:47 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 15:18:48 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 15:18:48 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/2/edit" for 127.0.0.1 at 2012-08-30 15:18:51 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", 2]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (91.1ms)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:18:52 +0545
+Served asset /active_admin.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:18:52 +0545
+Served asset /active_admin.js - 304 Not Modified (7ms)
+
+
+Started PUT "/admin/banners/2" for 127.0.0.1 at 2012-08-30 15:20:01 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"Rvolotionizing Lives Through Tech", "image"=>#<ActionDispatch::Http::UploadedFile:0xb58e7f0 @original_filename="students_2.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"students_2.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-jtzpzb>>}, "commit"=>"Update Banner", "id"=>"2"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "banners" SET "title" = 'Rvolotionizing Lives Through Tech', "image" = '/uploads/images/students_2.png', "updated_at" = '2012-08-30 09:35:01.077952' WHERE "banners"."id" = 2[0m
+  [1m[35m (177.7ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 186ms (ActiveRecord: 178.6ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 15:20:01 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (221.5ms)
+Completed 200 OK in 227ms (Views: 223.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:20:01 +0545
+Served asset /active_admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:20:01 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 15:20:02 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 15:20:02 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/1/edit" for 127.0.0.1 at 2012-08-30 15:20:04 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.1ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (90.5ms)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:20:04 +0545
+Served asset /active_admin.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:20:04 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started PUT "/admin/banners/1" for 127.0.0.1 at 2012-08-30 15:20:57 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"Revol-Tec ", "image"=>#<ActionDispatch::Http::UploadedFile:0xae693bc @original_filename="Banner_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"Banner_1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-vz1dhm>>}, "commit"=>"Update Banner", "id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "banners" SET "title" = 'Revol-Tec ', "image" = '/uploads/images/Banner_1.png', "updated_at" = '2012-08-30 09:35:57.346817' WHERE "banners"."id" = 1
+  [1m[36m (196.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 205ms (ActiveRecord: 197.3ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 15:20:57 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "banners" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mBanner Load (0.3ms)[0m  SELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (165.1ms)
+Completed 200 OK in 172ms (Views: 167.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:20:57 +0545
+Served asset /active_admin.css - 304 Not Modified (65ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:20:57 +0545
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 15:20:58 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 15:20:58 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/2/edit" for 127.0.0.1 at 2012-08-30 15:21:02 +0545
+Processing by Admin::BannersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Load (0.1ms)[0m  SELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", 2]]
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/edit.html.arb (90.9ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:02 +0545
+Served asset /active_admin.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:21:02 +0545
+Served asset /active_admin.js - 304 Not Modified (7ms)
+
+
+Started PUT "/admin/banners/2" for 127.0.0.1 at 2012-08-30 15:21:11 +0545
+Processing by Admin::BannersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"Rvolotionizing Lives Through Tech", "image"=>#<ActionDispatch::Http::UploadedFile:0xaf2e770 @original_filename="Banner_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"Banner_1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-bh1c1h>>}, "commit"=>"Update Banner", "id"=>"2"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" WHERE "banners"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "banners" SET "image" = '/uploads/images/Banner_1.png', "updated_at" = '2012-08-30 09:36:11.209658' WHERE "banners"."id" = 2[0m
+  [1m[35m (200.1ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 210ms (ActiveRecord: 201.0ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 15:21:11 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.3ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (219.4ms)
+Completed 200 OK in 226ms (Views: 221.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:11 +0545
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:21:11 +0545
+Served asset /active_admin.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 15:21:12 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 15:21:12 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.6ms)
+  Rendered application/_upperslider.html.erb (1.3ms)
+  Rendered application/_lowerslider.html.erb (0.7ms)
+  Rendered application/_footer.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admission.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /admission.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /navigation.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/lowerslider.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /lowerslider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedback.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /feedback.css - 304 Not Modified (55ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /footer.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aboutus.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /aboutus.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/lowerslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /lowerslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /active_admin/base.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jcarousellite_1.0.1.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /jcarousellite_1.0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upperslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /upperslider.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/dummy_logo.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /dummy_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_Bg_1.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /display_Bg_1.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/search_Btn.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /search_Btn.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Temp-1_13.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /Temp-1_13.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comma_1_bg.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /comma_1_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /books.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/school_Building.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /school_Building.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students_2.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /students_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_1.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /student_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notice_Board.png" for 127.0.0.1 at 2012-08-30 15:21:21 +0545
+Served asset /notice_Board.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/BW.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /BW.png - 304 Not Modified (15ms)
+
+
+Started GET "/assets/arrow_1.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /arrow_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Btn_1_Bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /Btn_1_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Text_Slider_Bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /Text_Slider_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_2_bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /display_2_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_Up.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /arrow_Up.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_down.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /arrow_down.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/social_Media.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /social_Media.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.4ms)
+  Rendered application/_upperslider.html.erb (1.3ms)
+  Rendered application/_lowerslider.html.erb (0.6ms)
+  Rendered application/_footer.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedback.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /feedback.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/aboutus.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /aboutus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /footer.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admission.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /admission.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /navigation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /lowerslider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /active_admin/application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /active_admin/base.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /app.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jcarousellite_1.0.1.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /jcarousellite_1.0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /lowerslider.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/upperslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /upperslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dummy_logo.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /dummy_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comma_1_bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /comma_1_bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/search_Btn.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /search_Btn.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Temp-1_13.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /Temp-1_13.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_Bg_1.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /display_Bg_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students_2.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /students_2.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/school_Building.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /school_Building.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_1.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /student_1.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/books.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /books.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notice_Board.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /notice_Board.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Btn_1_Bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /Btn_1_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/BW.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /BW.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/arrow_1.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /arrow_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_2_bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /display_2_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Text_Slider_Bg.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /Text_Slider_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_Up.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /arrow_Up.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_down.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /arrow_down.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/social_Media.png" for 127.0.0.1 at 2012-08-30 15:21:22 +0545
+Served asset /social_Media.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 15:22:13 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (92.6ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:13 +0545
+Served asset /active_admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:22:13 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 15:22:28 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"Hello Shobhab", "image"=>#<ActionDispatch::Http::UploadedFile:0xb293730 @original_filename="Banner_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"Banner_1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-rcjsgj>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 09:37:28 UTC +00:00], ["image", "/uploads/images/Banner_1.png"], ["title", "Hello Shobhab"], ["updated_at", Thu, 30 Aug 2012 09:37:28 UTC +00:00]]
+  [1m[35m (236.7ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 251ms (ActiveRecord: 237.6ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 15:22:28 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.3ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (178.1ms)
+Completed 200 OK in 184ms (Views: 180.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:28 +0545
+Served asset /active_admin.css - 304 Not Modified (67ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:22:28 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 15:22:28 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 15:22:28 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.5ms)
+  Rendered application/_upperslider.html.erb (1.4ms)
+  Rendered application/_lowerslider.html.erb (0.6ms)
+  Rendered application/_footer.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admission.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /admission.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aboutus.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /aboutus.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/feedback.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /feedback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /footer.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /navigation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /lowerslider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /active_admin/base.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jcarousellite_1.0.1.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /jcarousellite_1.0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /lowerslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upperslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /upperslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:22:30 +0545
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/dummy_logo.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /dummy_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/search_Btn.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /search_Btn.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Temp-1_13.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /Temp-1_13.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/comma_1_bg.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /comma_1_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_Bg_1.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /display_Bg_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students_2.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /students_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_1.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /student_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/school_Building.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /school_Building.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/books.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /books.png - 304 Not Modified (60ms)
+
+
+Started GET "/assets/notice_Board.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /notice_Board.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Btn_1_Bg.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /Btn_1_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_1.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /arrow_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/BW.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /BW.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/display_2_bg.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /display_2_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Text_Slider_Bg.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /Text_Slider_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_Up.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /arrow_Up.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_down.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /arrow_down.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/social_Media.png" for 127.0.0.1 at 2012-08-30 15:22:31 +0545
+Served asset /social_Media.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/banners/new" for 127.0.0.1 at 2012-08-30 15:22:59 +0545
+Processing by Admin::BannersController#new as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: f.buttons is deprecated in favour of f.actions and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+DEPRECATION WARNING: f.commit_button is deprecated in favour of f.action(:submit) and will be removed from Formtastic after 2.1. Please see ActionsHelper and InputAction or ButtonAction for more information. (called from block (2 levels) in <top (required)> at /home/julfiquar/Documents/projects/schools/school/app/admin/banners.rb:10)
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/new.html.arb (40.0ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:22:59 +0545
+Served asset /active_admin.css - 304 Not Modified (71ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:22:59 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started POST "/admin/banners" for 127.0.0.1 at 2012-08-30 15:23:27 +0545
+Processing by Admin::BannersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJ/PAsn56zsvSeLFvDE3l/TiMJt2Zx67o5IU8DGbsl8=", "banner"=>{"title"=>"Welcome To Revol-Tech", "image"=>#<ActionDispatch::Http::UploadedFile:0xac938f8 @original_filename="Banner_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"banner[image]\"; filename=\"Banner_1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120830-9634-18cfcjq>>}, "commit"=>"Create Banner"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "banners" ("created_at", "image", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 09:38:27 UTC +00:00], ["image", "/uploads/images/Banner_1.png"], ["title", "Welcome To Revol-Tech"], ["updated_at", Thu, 30 Aug 2012 09:38:27 UTC +00:00]]
+  [1m[35m (231.3ms)[0m  commit transaction
+Redirected to http://localhost:3002/admin/banners
+Completed 302 Found in 240ms (ActiveRecord: 232.2ms)
+
+
+Started GET "/admin/banners" for 127.0.0.1 at 2012-08-30 15:23:27 +0545
+Processing by Admin::BannersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mBanner Exists (0.2ms)[0m  SELECT 1 AS one FROM "banners" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "banners" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "banners" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mBanner Load (0.3ms)[0m  [1mSELECT "banners".* FROM "banners" ORDER BY "banners"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/julfiquar/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.4.4/app/views/active_admin/resource/index.html.arb (221.7ms)
+Completed 200 OK in 231ms (Views: 226.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:28 +0545
+Served asset /active_admin.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-08-30 15:23:28 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-08-30 15:23:28 +0545
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-08-30 15:23:28 +0545
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:23:30 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.5ms)
+  Rendered application/_upperslider.html.erb (1.5ms)
+  Rendered application/_lowerslider.html.erb (0.7ms)
+  Rendered application/_footer.html.erb (0.1ms)
+  Rendered pages/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:30 +0545
+Served asset /app.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/aboutus.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /aboutus.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admission.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /admission.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedback.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /feedback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /footer.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /lowerslider.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /navigation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jquery.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /active_admin/base.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /lowerslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jcarousellite_1.0.1.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jcarousellite_1.0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upperslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /upperslider.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/dummy_logo.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /dummy_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Temp-1_13.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /Temp-1_13.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/display_Bg_1.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /display_Bg_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/search_Btn.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /search_Btn.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comma_1_bg.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /comma_1_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students_2.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /students_2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_1.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /student_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/school_Building.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /school_Building.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /books.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notice_Board.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /notice_Board.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/BW.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /BW.png - 304 Not Modified (11ms)
+
+
+Started GET "/assets/display_2_bg.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /display_2_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_1.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /arrow_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Btn_1_Bg.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /Btn_1_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_Up.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /arrow_Up.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/Text_Slider_Bg.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /Text_Slider_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/pages/index?class=nav_content" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Processing by PagesController#index as HTML
+  Parameters: {"class"=>"nav_content"}
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus" 
+  [1m[36mBanner Load (0.2ms)[0m  [1mSELECT "banners".* FROM "banners" [0m
+  Rendered application/_navigation.html.erb (1.6ms)
+  Rendered application/_upperslider.html.erb (1.6ms)
+  Rendered application/_lowerslider.html.erb (0.6ms)
+  Rendered application/_footer.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/arrow_down.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /arrow_down.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/social_Media.png" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /social_Media.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /app.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/lowerslider.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /lowerslider.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/aboutus.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /aboutus.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admission.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /admission.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /footer.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /navigation.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/feedback.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /feedback.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /active_admin/base.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /active_admin.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jcarousellite_1.0.1.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /jcarousellite_1.0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lowerslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /lowerslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/upperslider.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /upperslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-30 15:23:31 +0545
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/dummy_logo.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /dummy_logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comma_1_bg.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /comma_1_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_Bg_1.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /display_Bg_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/search_Btn.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /search_Btn.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/school_Building.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /school_Building.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Temp-1_13.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /Temp-1_13.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students_2.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /students_2.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/student_1.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /student_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /books.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notice_Board.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /notice_Board.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/BW.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /BW.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/Btn_1_Bg.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /Btn_1_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_1.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /arrow_1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_down.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /arrow_down.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arrow_Up.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /arrow_Up.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Text_Slider_Bg.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /Text_Slider_Bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/display_2_bg.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /display_2_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/social_Media.png" for 127.0.0.1 at 2012-08-30 15:23:32 +0545
+Served asset /social_Media.png - 304 Not Modified (0ms)

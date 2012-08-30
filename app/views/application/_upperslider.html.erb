@@ -2,7 +2,7 @@
             <div id="feature_border_left"></div>
             <div id="feature_border_right"></div>
             <div id="feature_border_bottom"></div>
-           
+
 <div id="feature">
 	<div class="container">
 		<span class="next"></span>
@@ -22,7 +22,7 @@
 							</div>
 		</div>
 		<div class="feature_students_wrapper">
-		    
+
 			<div class="feature_students">
 				<div style="top: -185px;" class="slider">
 										<div class="student orange">
@@ -98,40 +98,22 @@
 		</div>
 		<div class="feature_images_wrapper">
 			<div class="feature_images">
-				<div style="left: -637px;" class="slider">
-										<div class="image toggle_info">
-						<%=image_tag"Banner_1.png",:class=>"upper_images" %>
-						<div class="caption info" >
-						<div class="display_1"></div>
-							<a href="#"><p>YOU BELONG HERE</p>
-									</a>
-						</div>
-					</div>
-										<div class="image toggle_info">
-						<%=image_tag"Banner_1.png",:class=>"upper_images" %>
-						<div class="caption info">
-						<div class="display_1"></div>
-						<a href="#"><p>
-											LOREM IPSUM		</p>		</a>
-						</div>
-					</div>
-										<div class="image toggle_info">
-						<%=image_tag"Banner_1.png",:class=>"upper_images" %>
-						<div class="caption info">
-						<div class="display_1"></div>
-							<a href="#">
-								<p>WELCOME TO DUMMY COLLEGE	</p>					</a>
-						</div>
-					</div>
-										<div class="image toggle_info">
-						<%=image_tag"Banner_1.png",:class=>"upper_images" %>
-						<div class="caption info">
-						<div class="display_1"></div>
-							<a href="#">
-								<p>COLLEGE INFORMATION 	</p>						</a>
-						</div>
-					</div>
-									</div>
+				    <div style="left: -637px;" class="slider">
+
+				    <% @banner.each do|t| %>
+
+										 <div class="image toggle_info">
+										     <%= image_tag "#{t.image}", :class=>"upper_images"%>
+
+						            <div class="caption info" >
+						            <div class="display_1"></div>
+						            <a href="#"><p><%= t.title%></p>
+
+									      </a>
+						          </div>
+					    </div>
+					  <%end%>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -140,13 +122,8 @@
 <div id="middle_slider">
     <div id="middle_slider_image">
 						<a href="#">
-								Bay State met Karen’s criteria in two other important ways—by 
+								Bay State met Karen’s criteria in two other important ways—by
 having on-campus student dorms.						</a>
       </div>
 </div>
 </div>
-
-
-
-
-
