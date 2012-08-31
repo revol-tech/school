@@ -48,6 +48,7 @@ list-style:none;
 
 #navigation_content li{
 display:inline;
+margin:0 0 0 10px;
 }
 
 #navigation_content ul li a{
@@ -87,7 +88,7 @@ float:right;
 list-style:none;
 }
 
-.sub_nav_content{
+#sub_nav a{
 color:#fff;
 margin:0 0 0 30px;
 text-transform:uppercase;

@@ -160,6 +160,8 @@ font:14px geneva, arial, helvetica, sans-serif;
 margin:0 0 5px 0;
 color:#a03c84;
 float:left;
+height:17px;
+overflow:hidden;
 text-decoration:none;
 }
 

@@ -147,6 +147,7 @@ background:url("Text_Slider_Bg.png") repeat center;
 margin:0 20px 0 20px;
 float:left;
 border-bottom:5px solid #000;
+overflow:hidden;
 }
 
 #middle_slider_image a{
@@ -156,6 +157,21 @@ color:#000;
 float:left;
 padding:14px;
 }
+
+#sliderNotice{
+	width:100%;
+	display:block;
+	float:left;
+}
+
+
+#slider{
+width:100%;
+float:left;
+display:block;
+height:42px;
+}
+
 
 .text_comma{
 width:18px;

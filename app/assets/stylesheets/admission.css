@@ -28,24 +28,37 @@ padding:20px 0 0 0;
 
 
 #addmission{
-width:250px;
+width:210px;
 float:left;
 display:block;
+margin:0 20px 0 0;
+}
+
+#addmission h2{
+padding:0px 0 10px 0px;
+
 }
 
 
 #addmission ul{
 list-style:none;
+border-bottom:1px solid #d5d5d5;
+float:left;
 }
 
 #addmission li{
 border-top:1px solid #d5d5d5;
+width:100%;
+float:left;
 }
 
 #addmission a {
 text-decoration:none;
 font:12px geneva, arial, helvetica, sans-serif;
 color:#666666;
+padding:5px;
+height:100%;
+float:left;
 }
 
 #addmission a:hover{
@@ -54,12 +67,28 @@ color:#0f0f0f;
 }
 
 .courses_content{
-width:250px;
-display:block;
+width:730px;
 float:left;
+display:block;
 }
 
-.courses_content h2{
+.undergraduate_study,.graduate_study{
+width:355px;
+display:block;
+float:left;
+margin:0 20px 0 0;
+
+}
+
+
+.undergraduate_text{
+width:100%;
+display:block;
+float:left;
+margin:0 20px 0 0;
+}
+
+.undergraduate_text h2,.graduate_text h2{
 width:100%;
 display:block;
 float:left;
@@ -67,38 +96,48 @@ font:12px geneva, arial, helvetica, sans-serif;
 margin:10px 0 10px 0;
 }
 
-.courses_content a{
+.undergraduate_text a,.graduate_text a{
 text-decoration:none;
 color:#C343A0;
 float:left;
 }
 
-.courses_content a:hover{
+.undergraduate_text a:hover,.graduate_text a:hover{
 text-decoration:underline;
 color: 	#FF00FF;
 }
 
-.courses_content p{
+.undergraduate_text p,.graduate_text p{
 display:block;
 float:left;
 font:12px/16px geneva, arial, helvetica, sans-serif;
-color:#000;
+color:#333333;
 
 }
 
-.admission_header p a{
+.undergraduate_image,.graduate_image{
+width:100%;
+float:left;
+display:block;
+}
+
+.undergraduate_student,.graduate_student{
+width:240px;
+height:100px;
+float:left;
+}
+
+
+.graduate_study{
+width:355px;
 display:block;
 float:left;
-font:20px geneva, arial, helvetica, sans-serif;
-color:#C343A0;
-text-decoration:underline;
+margin:0 0px 0 0;
+
 }
 
 
-.admission_header p a:hover{
-color: 	 	#FF1493;
-text-decoration:none;
-}
+
 
 
 

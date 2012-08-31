@@ -31,5 +31,8 @@ class PagesController < ApplicationController
   end
 
   def admission
+      @menu=Menu.all
+      @submenu=Submenu.all
+      
   end
 end
