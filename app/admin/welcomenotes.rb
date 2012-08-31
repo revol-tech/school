@@ -20,7 +20,7 @@ ActiveAdmin.register Welcomenote do
         uploader.store!(params[:welcomenote][:image])
         @welcomenote = Welcomenote.new()
         @welcomenote.text = params[:welcomenote][:text]
-        @welcomenoteimage = uploader.to_s
+        @welcomenote.image = uploader.to_s
         @welcomenote.save!
         redirect_to admin_welcomenotes_path
       end
