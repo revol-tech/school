@@ -7,6 +7,7 @@ class PagesController < ApplicationController
     @noticeboard=Noticeboard.all
     @welcomenote=Welcomenote.all
     @news=News.all
+    @flashnews=Flashnews.all
 
   end
 
@@ -38,6 +39,6 @@ class PagesController < ApplicationController
   def admission
       @menu=Menu.all
       @submenu=Submenu.all
-      
+
   end
 end

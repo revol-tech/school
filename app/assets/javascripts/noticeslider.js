@@ -2,18 +2,20 @@ $(function(){
 
 	$('#slider').bxSlider({
 							mode		:'horizontal',
-							infiniteLoop:'true',		
-							speed		:30000,	
+
+							infiniteLoop:'true',
+							speed		:10000,
 							auto		:true,
 							autoStart	:true,
 							autoHover	:true,
-							//autoDirection:'prev',
 							autoDirection:'next',
+							//autoDirection:'next',
 							pause		:0,
-							easing: 'linear', 
-							autoHover: true,		
-							displaySlideQty: 3	
-							
+							easing: 'linear',
+							autoHover: true,
+							displaySlideQty: 3
+
+
 						});
 /*
 

@@ -1,4 +1,5 @@
-<div id="feature_border"><%=image_tag"display_Bg_1.png",:class=>"feature_border_image"%></div>
+<div id="feature_border">
+<%=image_tag"display_Bg_1.png",:class=>"feature_border_image"%></div>
             <div id="feature_border_left"></div>
             <div id="feature_border_right"></div>
             <div id="feature_border_bottom"></div>
@@ -70,11 +71,10 @@
 			<div class="feature_images">
 
 				    <div style="left: -637px;" class="slider">
-
 				    <% @banner.each do|t| %>
 
 										 <div class="image toggle_info">
-										     <%= image_tag "#{t.image}", :class=>"upper_images"%>
+										     <%= image_tag "#{t.image}", :class=>"upper_images" %>
 
 						            <div class="caption info" >
 						            <div class="display_1"></div>
@@ -95,15 +95,14 @@
 <div id="middle_slider">
     <div id="middle_slider_image">
 						<div id='sliderNotice'>
-	
+
 <ul id='slider'>
-	<li><a href="#">Use the correct document accordingly with window argument (sandbox)</a></li>
-<li><a href="#">t is a long established fact that a reader will be distracted by the readable conten</a></li>
- <li><a href="#">There are many variations of passages of Lorem Ipsum available, but the majority </a></li>
- 
+<% @flashnews.each do |t|%>
+	<li><a href="#"><%= t.text%> </a></li>
+<% end %>
 </ul>
 
-	
+
 </div>
       </div>
 </div>
