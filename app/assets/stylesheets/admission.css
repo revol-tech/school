@@ -72,23 +72,23 @@ float:left;
 display:block;
 }
 
-.undergraduate_study,.graduate_study{
+.courses_study{
 width:355px;
 display:block;
 float:left;
-margin:0 20px 0 0;
+margin:0 0px 0 0;
 
 }
 
 
-.undergraduate_text{
+.courses_text{
 width:100%;
 display:block;
 float:left;
 margin:0 20px 0 0;
 }
 
-.undergraduate_text h2,.graduate_text h2{
+.courses_text h2{
 width:100%;
 display:block;
 float:left;
@@ -96,18 +96,18 @@ font:12px geneva, arial, helvetica, sans-serif;
 margin:10px 0 10px 0;
 }
 
-.undergraduate_text a,.graduate_text a{
+.courses_text a{
 text-decoration:none;
 color:#C343A0;
 float:left;
 }
 
-.undergraduate_text a:hover,.graduate_text a:hover{
+.courses_text a:hover{
 text-decoration:underline;
 color: 	#FF00FF;
 }
 
-.undergraduate_text p,.graduate_text p{
+.courses_text p{
 display:block;
 float:left;
 font:12px/16px geneva, arial, helvetica, sans-serif;
@@ -115,26 +115,21 @@ color:#333333;
 
 }
 
-.undergraduate_image,.graduate_image{
+.courses_image{
 width:100%;
 float:left;
 display:block;
 }
 
-.undergraduate_student,.graduate_student{
+.courses_student{
 width:240px;
-height:100px;
+height:140px;
 float:left;
+padding:10px 115px 10px 0; 
 }
 
 
-.graduate_study{
-width:355px;
-display:block;
-float:left;
-margin:0 0px 0 0;
 
-}
 
 
 

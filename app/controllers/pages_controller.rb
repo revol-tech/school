@@ -15,10 +15,13 @@ class PagesController < ApplicationController
 
   def aboutus
     @menu=Menu.all
-
+    @submenu=Submenu.all
   end
 
   def news
+  end
+  
+  def contactus
   end
 
   def findingus
@@ -28,6 +31,8 @@ class PagesController < ApplicationController
   end
 
   def feedback
+    @menu=Menu.all
+    @submenu=Submenu.all
   end
 
   def admission

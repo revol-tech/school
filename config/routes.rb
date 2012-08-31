@@ -9,6 +9,8 @@ Dummyschool::Application.routes.draw do
   get "pages/home"
 
   get "pages/aboutus"
+  
+  get "pages/contactus"
 
   get "pages/news"
 
