@@ -6,6 +6,7 @@ class PagesController < ApplicationController
     @subbanner=Subbanner.all
     @noticeboard=Noticeboard.all
     @welcomenote=Welcomenote.all
+    @news=News.all
 
   end
 

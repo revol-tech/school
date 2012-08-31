@@ -21,7 +21,7 @@ ActiveAdmin.register Noticeboard do
         @noticeboard = Noticeboard.new()
         @noticeboard.text = params[:noticeboard][:text]
         @noticeboardimage = uploader.to_s
-        @noticeboard.save!
+        @notice.board.save!
         redirect_to admin_noticeboards_path
       end
       def update

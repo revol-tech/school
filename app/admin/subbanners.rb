@@ -24,7 +24,7 @@ ActiveAdmin.register Subbanner do
         @subbanner.image_name = params[:subbanner][:image_name]
         @subbanner.text = params[:subbanner][:text]
         @subbanner.read_more = params[:subbanner][:read_more]
-        @subbannerimage = uploader.to_s
+        @subbanner.image = uploader.to_s
         @subbanner.save!
         redirect_to admin_subbanners_path
       end
