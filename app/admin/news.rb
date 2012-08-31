@@ -30,7 +30,7 @@ ActiveAdmin.register News do
          @news = News.find(params[:id])
         uploader = ImageUploader.new
         uploader.store!(params[:news][:image])
-        @news.headline = params[:news][:text]
+        @news.headline = params[:news][:headline]
         @news.detail = params[:news][:detail]
         @news.image = uploader.to_s
         @news.save!
