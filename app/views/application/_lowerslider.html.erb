@@ -4,13 +4,16 @@
 				 <div class="lower_content_header">
 							<h4>Welcomt to Dummy</h4>
 					</div>
+								 <% @welcomenote.each do|t| %>
+
 					<div class="lower_content_image">
-						<%=image_tag"students_2.png",:class=>"student"%>
+					<%= image_tag "#{t.image}",:class=>"student"%>
+
 					</div>
 					<div class="lower_content_text">
-							<p>
-								The path to your goals doesn’t always follow a straight line.  Just ask Marco Ignigni.							</p>
+							<p><%= t.text %></p>
 					</div>
+					<% end %>
 					<div class="information">
 						<div class="information_button"><a href="#">Request Information</a><div class="arrow_2"></div></div>
 					</div>
@@ -21,13 +24,13 @@
 					</div>
 					<button class="previmage" ></button>
 
-        
+
 			<div class="anyClass">
 					<ul>
 						  <li><div class="slider_content"><%=image_tag"school_Building.png",:class=>"slider_image"   %><div class="content_header"><a href="#">what is lorem ipsum?</a><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></div></div></li>
 						 <li><div class="slider_content"><%=image_tag"student_1.png",:class=>"slider_image"   %><div class="content_header"><a href="#">what is lorem ipsum?</a><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></div></div></li>
 						 <li><div class="slider_content"><%=image_tag"books.png",:class=>"slider_image"   %><div class="content_header"><a href="#">what is lorem ipsum?</a><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span></div></div></li>
-						  
+
 					</ul>
 			</div>
 			<button class="nextimage"></button>
@@ -36,18 +39,20 @@
 				 <div class="lower_content_header">
 							<h4>Notice Board</h4>
 					</div>
+			 <% @noticeboard.each do|t| %>
+
 					<div class="lower_content_image">
-							<%=image_tag"notice_Board.png",:class=>"student"%>
+							<%= image_tag "#{t.image}",:class=>"student"%>
 					</div>
 					<div class="lower_content_text">
 							<p>
-								The path to your goals doesn’t always follow a straight line.  Just ask Marco Ignigni.							</p>
+								<%= t.text%></p>
 					</div>
+					<%end%>
 					<div class="information_notice">
 							<div class="notice_button"><a href="#">All Notices</a><div class="arrow_2"></div></div>
 					</div>
 		</div>
-		
-</div>
-</div>
 
+</div>
+</div>

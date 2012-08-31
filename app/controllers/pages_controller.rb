@@ -3,6 +3,9 @@ class PagesController < ApplicationController
     @menu=Menu.all
     @banner=Banner.all
     @subbanner=Subbanner.all
+    @noticeboard=Noticeboard.all
+    @welcomenote=Welcomenote.all
+
   end
 
   def home
