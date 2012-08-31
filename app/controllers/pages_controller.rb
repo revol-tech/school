@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def index
     @menu=Menu.all
     @banner=Banner.all
+    @subbanner=Subbanner.all
   end
 
   def home

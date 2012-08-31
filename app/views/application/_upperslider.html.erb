@@ -25,38 +25,20 @@
 
 			<div class="feature_students">
 				<div style="top: -185px;" class="slider">
-										<div class="student orange">
-						<%=image_tag"Temp-1_13.png" %>
-						          <a href="#" class="info">
-							<span class="icon"></span>
-							<strong>Day Student</strong>
-														Adam P., '12													</a>
-						<div class="corner"></div>
-					</div>
-										<div class="student blue">
-						<%=image_tag"Temp-1_13.png" %>
-						              <a href="#" class="info">
-							<span class="icon"></span>
-							<strong>Day Student</strong>
-														Karen S., '15													</a>
-						<div class="corner"></div>
-					</div>
-										<div class="student purple">
-						<%=image_tag"Temp-1_13.png" %>
-						            <a href="#" class="info">
-							<span class="icon"></span>
-							<strong>Day Student</strong>
-														Marco I., '13													</a>
-						<div class="corner"></div>
-					</div>
-										<div class="student green">
-						<%=image_tag"Temp-1_13.png" %>
-						            <a href="#" class="info">
-							<span class="icon"></span>
-							<strong>Day Student</strong>
-														Francesca L., '12													</a>
-						<div class="corner"></div>
-					</div>
+				             				    <% @subbanner.each do|t| %>
+
+                           							<div class="student orange">
+
+						                 <%= image_tag "#{t.image}"%>
+
+						                              <a href="#" class="info">
+							                    <span class="icon"></span>
+							                    <strong><%= t.image_name%><strong>
+														                    													</a>
+						                    <div class="corner"></div>
+					                    </div>
+					                    <%end %>
+
 									</div>
 			</div>
 		</div>
@@ -70,30 +52,16 @@
 		</div>
 		<div class="feature_quotes_wrapper">
 			<div class="feature_quotes">
-								<blockquote style="display: none;" class="orange">
+            <% @subbanner.each do|t| %>
+								<blockquote style="display: block;" class="orange selected">
 								<%=image_tag"comma_1_bg.png",:class=>"text_comma"%>
-					<p>
-						I just feel like you learn a lot more with a smaller setting.					</p>
-										<div class="button_1"><a href="#">See Our Nursing Program</a><div class="arrow_1"></div></div>
+					         <p><%= t.text%></p>
+							<div class="button_1"><a href="#"><%= t.read_more%></a>
+							        <div class="arrow_1"></div>
+							   </div>
 									</blockquote>
-								<blockquote style="display: block;" class="blue selected">
-								<%=image_tag"comma_1_bg.png",:class=>"text_comma"%>
-					<p>
-						Right from the start, Bay State made me feel so welcome.					</p>
-										<div class="button_1"><a href="#">See Our Management Program</a><div class="arrow_1"></div></div>
-									</blockquote>
-								<blockquote class="purple">
-								<%=image_tag"comma_1_bg.png",:class=>"text_comma"%>
-					<p>
-						We were not only learning to be a PTA.					</p>
-										<div class="button_1"><a href="#">See Our PTA Program</a><div class="arrow_1"></div>
-									</blockquote>
-								<blockquote class="green">
-								<%=image_tag"comma_1_bg.png",:class=>"text_comma"%>
-					<p>
-						In our classes, I think we get that real knowledge.					</p>
-										<div class="button_1"><a href="#">See Our Entertainment Mgt.</a><div class="arrow_1"></div>
-									</blockquote>
+
+                <%end%>
 							</div>
 		</div>
 		<div class="feature_images_wrapper">
