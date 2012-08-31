@@ -11,7 +11,7 @@ set :use_sudo, false #permission conflict resolve
 set :scm, :git
 set :rvm_type, :system
 
-#// Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :deploy_to, "/home/deploy/www/school.revol-tech.com.np"
 
@@ -29,10 +29,7 @@ set :bundle_gemfile, "Gemfile"
 ssh_options[:forward_agent] = true
 ssh_options[:port] = 2020
 
-
-
-
-#set :rvm_ruby_string, '1.9.3'
+set :rvm_ruby_string, '1.9.3'
 #set :rvm_type, :user # Don't use system-wide RVM
 #load 'deploy/assets'
 
