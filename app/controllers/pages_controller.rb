@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def index
     @menu=Menu.all
+    @submenu=Submenu.all
     @banner=Banner.all
     @subbanner=Subbanner.all
     @noticeboard=Noticeboard.all
