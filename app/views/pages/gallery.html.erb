@@ -1,2 +1,14 @@
-<h1>Pages#gallery</h1>
-<p>Find me in app/views/pages/gallery.html.erb</p>
+
+    <div class="gallery_image">
+         <div class="holiday_image" style="margin:0 20px 0 0;">
+              <%=image_tag"52.jpg",:class=>""%>
+                  <h2>holidays</h2>
+                   <a href="#"> <p>view gallery</p></a>
+         </div>
+         <div class="holiday_image">
+              <%=image_tag"67-2.jpg",:class=>""%>
+                  <h2>tours</h2>
+                   <a href="#"> <p>view gallery</p></a>
+         </div>
+    </div>
+<%= render"footer" %>

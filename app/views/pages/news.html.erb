@@ -1,2 +1,77 @@
-<h1>Pages#news</h1>
-<p>Find me in app/views/pages/news.html.erb</p>
+<div id="main_wrapper">
+    <div id="news_content">
+      <div id="news_main_content">
+          <div class="news_blog">
+                <h2>News</h2>
+                <div class="short_news">
+                  <ul>
+                        <li><input type="checkbox" class="chekbox">College News</li>
+                        <li><input type="checkbox" class="chekbox">College Blog News</li>
+                        <li><input type="checkbox" class="chekbox"> College Academic News</li>
+                        <li><input type="checkbox" class="chekbox">College Managements News</li>
+                        <li><input type="checkbox" class="chekbox">College Sports News</li>
+                        <li><input type="checkbox" class="chekbox">College Counselling News</li>
+                  </ul>
+                </div>
+          </div>
+              <div class="news_main_content">
+                   <div class="news_header">
+                      <h2>Lorem Ipsum</h2>
+                    </div>
+                        <div class="news_detail">  
+                              <div class="news_image">
+                                  <%=image_tag"student_1.png",:class=>"sport_image"%>
+                              </div>
+                        
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            
+                    </div>
+                    
+                    
+                    <div class="news_header">
+                      <h2>Lorem Ipsum</h2>
+                    </div>
+                        <div class="news_detail">  
+                              <div class="news_image">
+                                  <%=image_tag"books.png",:class=>"sport_image"%>
+                              </div>
+                        
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            
+                    </div>
+              </div>
+            <div class="news_blog" style="float:right;">
+                    <h2>Upcomming Events</h2>
+                <div class="events_content">
+                    <div class="date">
+                            <div class="month">
+                                <span>Sept</span>
+                            </div>
+                            <div class="day">
+                                <span>11</span>
+                            </div>
+                    </div>
+                    <div class="events_text">
+                          <a href="#">Lorem Ipsum is simply dummy.</a>
+                          <p>at 10:00 AM Baneswor, DCMA, Kathmandu.</p>
+                    </div>  
+                  </div> 
+                <div class="events_content">
+                  <div class="date">
+                        <div class="month">
+                            <span>Sept</span>
+                        </div>
+                        <div class="day">
+                            <span>19</span>
+                        </div>
+                   </div>
+                    <div class="events_text">
+                          <a href="#">Lorem Ipsum is simply dummy.</a>
+                          <p>at 1:00 PM ,Hotel Yak & Yeti, Darbarmarg.</p>
+                    </div> 
+                </div>                 
+            </div>
+          </div>
+    </div>
+    <%= render"footer" %>
+</div>

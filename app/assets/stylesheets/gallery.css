@@ -1,0 +1,30 @@
+.gallery_image{
+width:920px;
+display:block;
+margin:0 auto;
+}
+
+.holiday_image{
+width:450px;
+float:left;
+display:block;
+overflow:hidden;
+padding:20px 0px 20px 0;
+}
+
+.holiday_image h2{
+width:100%;
+float:left;
+font:16px geneva, arial, helvetica, sans-serif;
+color:#C343A0;
+text-transform:uppercase;
+margin:20px 0 10px 0;
+}
+
+.holiday_image p{
+width:100%;
+float:left;
+font:15px geneva, arial, helvetica, sans-serif;
+color:#333333;
+text-transform:uppercase;
+}

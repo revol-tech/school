@@ -1,0 +1,61 @@
+#program_faculty{
+width:960px;
+display:block;
+margin:0 auto;
+margin-top:20px;
+}
+
+.program,.faculty{
+width:960px;
+float:left;
+}
+
+.program_content,.faculty_content{
+background-color:#ADD8E6;
+margin:0 0 20px 0;
+}
+
+
+.program h2,.faculty h2{
+color:#C343A0;
+font:20px geneva, arial, helvetica, sans-serif;
+padding:10px;
+}
+
+
+
+.program_text,.faculty_text{
+width:px;
+float:left;
+display:block;
+background-color:#FAF0E6;
+width:302.5px;
+border:2px solid #ADD8E6;
+}
+
+.program_text h4,.faculty_text h4{
+color:#333333;
+font:18px geneva, arial, helvetica, sans-serif;
+width:auto;
+float:left;
+margin:10px 0 10px 10px;
+border-bottom:1px solid #333333;
+}
+
+.program_text li,.faculty_text li{
+width:450px;
+float:left;
+display:block;
+margin:10px 0 0 10px;
+font:13px geneva, arial, helvetica, sans-serif;
+}
+
+
+.program_chekbox{
+width:5px;
+height:5px;
+float:left;
+margin:0 10px 0 0;
+}
+
+

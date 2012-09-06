@@ -1,0 +1,116 @@
+#lifedcma_content{
+width:960px;
+display:block;
+margin:0 auto;
+}
+
+#lifedcma_main_content{
+background:rgba(0,0,0,.8);
+}
+
+.lifedcma_header{
+width:208px;
+float:left;
+height:500px;
+border:1px solid #333333;
+}
+
+.lifedcma_header h2{
+color: #C343A0;
+font:22px geneva, arial, helvetica, sans-serif;
+margin:10px 0 10px 10px;
+text-transform:lowercase;
+}
+
+.life_dcma{
+float:left;
+width:100%;
+height:455px;
+background-color:#FAF0E6;
+}
+
+.life_dcma ul{
+border-bottom:1px solid #333333;
+}
+
+.life_dcma li{
+padding:5px 10px 5px 10px;
+border-top:1px solid #333333;
+}
+
+.life_dcma a{
+font:13px geneva, arial, helvetica, sans-serif;
+color:#333333;
+}
+
+.life_dcma a:hover{
+color: 	#C343A0;
+text-decoration:underline;
+}
+
+.lifedcma_main_content{
+width:500px;
+float:left;
+display:block;
+padding:20px;
+}
+
+.lifedcma_image{
+width:520px;
+height:360px;
+float:left;
+margin:0 0 20px 0;
+}
+
+.lifedcma_image h1{
+float:left;
+display:block;
+margin:0 0 0 0;
+font:25px geneva, arial, helvetica, sans-serif;
+text-transform:uppercase;
+color:#C343A0;
+}
+
+.black_white_image{
+width:510px;
+height:330px;
+float:left;
+}
+
+.lifedcma_text{
+width:500px;
+float:left;
+font:13px geneva, arial, helvetica, sans-serif;
+color:#333333;
+}
+
+.image_student{
+width:188px;
+float:left;
+display:block;
+padding:0 10px 20px 10px;
+background-color:#FAF0E6;
+height:435px;
+}
+
+.image_student h4{
+float:left;
+font-size:15px;
+font-style:italic;
+color:#C343A0;
+margin:5px 0 20px 0;
+width:188px;
+}
+
+.images_0f_student{
+width:188px;
+height:140px;
+float:left;
+}
+
+.image_student p{
+float:left;
+font:11px/17px geneva, arial, helvetica, sans-serif;
+color:#333333;
+}
+

@@ -21,6 +21,10 @@ Dummyschool::Application.routes.draw do
   get "pages/feedback"
   
   get "pages/admission"
+  
+  get "pages/programfaculty"
+  
+  get "pages/lifedcma"
 
  resources :pages
 
