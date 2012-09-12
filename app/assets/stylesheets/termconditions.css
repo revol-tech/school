@@ -1,0 +1,56 @@
+#termcondition_content{
+width:960px;
+margin:0 auto;
+display:block;
+}
+
+.termcondition_main_content{
+width:100%;
+float:left;
+display:block;
+background:rgba(0,0,0, .8)
+}
+
+.advertisement{
+width:260px;
+display:block;
+float:right;
+height:1000px;
+display:block;
+}
+
+.use_term_site{
+width:700px;
+float:left;
+display:block;
+}
+
+
+.use_term,.use_site{
+width:100%;
+float:left;
+display:block;
+}
+
+.use_term h1{
+color:#fff;
+font:20px geneva, arial, helvetica, sans-serif;
+padding:20px 0 20px 20px;
+float:left;
+text-transform:uppercase;
+}
+
+.use_term p,.use_site p{
+color:#fff;
+font:12px/18px geneva, arial, helvetica, sans-serif;
+float:left;
+margin:0 0 0 20px;
+}
+
+.use_site h2{
+color:#fff;
+font:15px geneva, arial, helvetica, sans-serif;
+padding:20px 0 20px 20px;
+float:left;
+}
+

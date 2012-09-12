@@ -60,4 +60,49 @@ class PagesController < ApplicationController
       @menu=Menu.all
       @submenu=Submenu.all
   end
+  
+   def termconditions
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def emailsignup
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+   def termdate
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def webaccessibility
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def collegerule
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def moodle
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def advice
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def sendtofriend
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+   def vaccancy
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
 end

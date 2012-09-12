@@ -1,0 +1,84 @@
+#vaccancy_content{
+width:960px;
+margin:0 auto;
+display:block;
+}
+
+.vaccancy_details{
+width:960px;
+float:left;
+padding:20px 0 0 0;
+display:block;
+background:rgba(0, 0, 0, .8);
+}
+
+.vaccancy_details h1{
+width:940px;
+float:left;
+display:block;
+color:#C343A0;
+font:25px geneva, arial, helvetica, sans-serif;
+padding:0 0 30px 20px;
+}
+
+
+.vaccancy_header{
+width:920px;
+float:left;
+display:block;
+padding:0 20px;
+}
+
+.vaccancy_header h2{
+width:940px;
+float:left;
+display:block;
+color:#C343A0;
+font:20px geneva, arial, helvetica, sans-serif;
+padding:10px 0;
+}
+
+.vaccancy_header p{
+width:940px;
+float:left;
+display:block;
+color:#fff;
+font:12px/18px geneva, arial, helvetica, sans-serif;
+padding:0 0 10px 0px;
+}
+
+.vaccancy_type{
+width:100%;
+float:left;
+display:block;
+}
+
+.vaccancy_type p{
+width:450px;
+float:left;
+display:block;
+color:#fff;
+font:12px/18px geneva, arial, helvetica, sans-serif;
+}
+
+.vaccancy_type span{
+float:left;
+display:block;
+color:#C343A0;
+font:bold 12px geneva, arial, helvetica, sans-serif;
+padding:0 5px 0 0;
+}
+
+.vaccancy_type a{
+float:left;
+display:block;
+color:#fff;
+font:bold 14px geneva, arial, helvetica, sans-serif;
+}
+
+.vaccancy_type a:hover{
+color:#C343A0;
+text-decoration:underline;
+}
+
+

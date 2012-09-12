@@ -25,7 +25,24 @@ Dummyschool::Application.routes.draw do
   get "pages/programfaculty"
   
   get "pages/lifedcma"
+  
+  get "pages/termconditions"
+  
+  get "pages/emailsignup"
+  
+  get "pages/termdate"
+  
+  get "pages/webaccessibility"
+  
+  get "pages/collegerule"
+  
+  get "pages/moodle"
+  
+  get "pages/advice"
+  
+  get "pages/sendtofriend"
 
+  get "pages/vaccancy"
  resources :pages
 
 

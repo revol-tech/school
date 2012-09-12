@@ -1,0 +1,116 @@
+#college_rule{
+width:960px;
+margin:0 auto;
+display:block;
+}
+
+.college_rule_content{
+width:920px;
+padding:20px;
+float:left;
+display:block;
+background-color:#fff;
+}
+
+.college_rule_text{
+width:100%;
+float:left;
+display:block;
+}
+
+.college_rule_text h2{
+width:100%;
+float:left;
+display:block;
+color:#C343A0;
+font:22px geneva, arial, helvetica, sans-serif;
+padding:0 0 20px 0;
+}
+
+.college_rule_text p{
+width:100%;
+float:left;
+display:block;
+color:#333333;
+font:12px/18px geneva, arial, helvetica, sans-serif;
+}
+
+.scroll {
+  height: 350px;
+  position: relative; /* fix for IE to respect overflow */
+  float: left;
+  background: #FFFFFF url(images/content_pane-gradient.gif) repeat-x scroll left bottom;
+  width:100%;
+  overflow:hidden;
+}
+
+.scrollContainer{
+width:940px;
+float:left;
+display:block;
+}
+
+.scrollContainer div.panel {
+  padding: 10px;
+  height: 350px;
+  width: 920px; /* change to 560px if not using JS to remove rh.scroll */
+}
+
+
+#slider_get{
+width:100%;
+float:left;
+display:block;
+position:relative;
+}
+
+#college_rule_text.college_navigation{
+float:left;
+width:200px;
+margin:0 20px 0 0;
+}
+
+#slider_get li{
+width:100%;
+float:left;
+}
+
+#slider_get span{
+width:25px;
+float:left;
+display:block;
+padding:0 0 0 0px;
+}
+
+#slider_get  a{
+float:left;
+display:block;
+color:#333333;
+font:bold 12px geneva, arial, helvetica, sans-serif;
+padding:5px 0 0 0;
+}
+
+#slider_get  a:hover{
+color:#C343A0;
+text-decoration:underline;
+}
+
+
+
+
+.panel h2{
+width:100%;
+float:left;
+display:block;
+font:19px geneva, arial, helvetica, sans-serif;
+color:#C343A0;
+}
+
+.panel p{
+width:100%;
+float:left;
+display:block;
+color:#333333;
+font:12px/18px geneva, arial, helvetica, sans-serif;
+padding:10px 0;
+}

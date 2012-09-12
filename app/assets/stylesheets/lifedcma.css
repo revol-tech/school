@@ -5,7 +5,12 @@ margin:0 auto;
 }
 
 #lifedcma_main_content{
-background:rgba(0,0,0,.8);
+background:#fff;
+opacity:0.8;
+float:left;
+width:100%;
+display:block;
+
 }
 
 .lifedcma_header{
@@ -13,6 +18,7 @@ width:208px;
 float:left;
 height:500px;
 border:1px solid #333333;
+display:block;
 }
 
 .lifedcma_header h2{
@@ -20,27 +26,40 @@ color: #C343A0;
 font:22px geneva, arial, helvetica, sans-serif;
 margin:10px 0 10px 10px;
 text-transform:lowercase;
+float:left;
+display:block;
 }
 
 .life_dcma{
 float:left;
 width:100%;
 height:455px;
-background-color:#FAF0E6;
+background-color:#EEEEEE;
+display:block;
 }
 
 .life_dcma ul{
 border-bottom:1px solid #333333;
+display:block;
+float:left;
 }
 
 .life_dcma li{
 padding:5px 10px 5px 10px;
 border-top:1px solid #333333;
+float:left;
+display:block;
+width:188px;
 }
 
 .life_dcma a{
 font:13px geneva, arial, helvetica, sans-serif;
 color:#333333;
+text-shadow: 1px 2px 3px #666;
+-webkit-text-shadow: 1px 2px 3px #666;
+-moz-text-shadow: 1px 2px 3px #666;
+float:left;
+display:block;
 }
 
 .life_dcma a:hover{
@@ -53,6 +72,7 @@ width:500px;
 float:left;
 display:block;
 padding:20px;
+display:block;
 }
 
 .lifedcma_image{
@@ -75,6 +95,7 @@ color:#C343A0;
 width:510px;
 height:330px;
 float:left;
+display:block;
 }
 
 .lifedcma_text{
@@ -82,6 +103,7 @@ width:500px;
 float:left;
 font:13px geneva, arial, helvetica, sans-serif;
 color:#333333;
+display:block;
 }
 
 .image_student{
@@ -89,7 +111,7 @@ width:188px;
 float:left;
 display:block;
 padding:0 10px 20px 10px;
-background-color:#FAF0E6;
+background-color:#EEEEEE;
 height:435px;
 }
 
@@ -100,17 +122,20 @@ font-style:italic;
 color:#C343A0;
 margin:5px 0 20px 0;
 width:188px;
+display:block;
 }
 
 .images_0f_student{
 width:188px;
 height:140px;
 float:left;
+display:block;
 }
 
 .image_student p{
 float:left;
 font:11px/17px geneva, arial, helvetica, sans-serif;
 color:#333333;
+display:block;
 }
 

@@ -1,0 +1,70 @@
+#friend_email{
+width:960px;
+margin:0 auto;
+display:block;
+}
+
+.friend_email_content{
+width:450px;
+float:left;
+display:block;
+padding:20px;
+background-color:#C343A0;
+margin:0 20px 0 0;
+}
+
+.friend_email_content h2{
+float:left;
+display:block;
+color:#000;
+font:30px geneva, arial, helvetica, sans-serif;
+padding:0 0 10px 0;
+}
+
+.friend_email_content p{
+float:left;
+display:block;
+color:#000;
+font:12px geneva, arial, helvetica, sans-serif;
+width:100%;
+padding:0 0 20px 0;
+}
+
+.send_email{
+width:450px;
+float:left;
+display:block;
+}
+
+.friend_email_content .form_email{
+width:165px;
+float:left;
+display:block;
+font:20px geneva, arial, helvetica, sans-serif;
+}
+
+.friend_email_content .form_input{
+width:200px;
+float:left;
+display:block;
+padding:7px 12px;
+border:none;
+margin:0 0 25px 0;
+border-radius:8px;
+-mozborder-radius:8px;
+-webkit-border-radius:8px;
+}
+
+.form_image{
+width:430px;
+float:left;
+height:300px;
+display:block;
+}
+
+.email_icon{
+width:299px;
+height:299px;
+float:left;
+display:block;
+}

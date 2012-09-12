@@ -9,9 +9,10 @@
              <% @menu.each do |t|%>
               <li><%= link_to t.title,:controller=>t.controller,:action=>t.action,:class=>'nav_content' %></li>
               <%end%>
-                  <div id="search_button"><input type="text" class="search">
-                       <a href="#"><%=image_tag"search_Btn.png",:class=>"Btn_search"%></a></div>
+            
 								</ul>
+								<div id="search_button"><input type="text" class="search">
+                       <a href="#"><%=image_tag"search_Btn.png",:class=>"Btn_search"%></a></div>
 					<div id="sub_nav">
 						<ol>
 							<% @submenu.each do |t|%>
