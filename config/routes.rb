@@ -43,6 +43,13 @@ Dummyschool::Application.routes.draw do
   get "pages/sendtofriend"
 
   get "pages/vaccancy"
+  
+  get "pages/calendar"
+  
+  get "pages/staffstudentmail"
+  
+   get "pages/sitemap"
+ 
  resources :pages
 
 

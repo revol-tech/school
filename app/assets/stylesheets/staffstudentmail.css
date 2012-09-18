@@ -1,0 +1,69 @@
+#staffmail{
+width:500px;
+margin:0 auto;
+}
+
+
+.staffstudentmail{
+width:460px;
+float:left;
+display:block;
+padding:20px;
+background-color:#fff;
+-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  border-radius:20px;
+ -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+}
+
+
+.staffstudentmail h2{
+width:450px;
+float:left;
+display:block;
+color:#C343A0;
+font:30px geneva, arial, helvetica, sans-serif;
+padding:0 0 10px 0;
+}
+
+
+.staffstudentmail p{
+width:450px;
+float:left;
+display:block;
+color:#333;
+font:12px geneva, arial, helvetica, sans-serif;
+padding:0 0 10px 0;
+}
+
+.staff_sentmail{
+width:100%;
+float:left;
+display:block;
+}
+
+.staff_sentmail label{
+width:190px;
+float:left;
+display:block;
+color:#333;
+}
+
+.staff_sentmail .staff_input{
+float:left;
+display:block;
+margin:0 0 20px 0;
+padding:5px 8px;
+}
+
+.staffsubmit{
+float:right;
+margin:0 22px 0 0;
+border:none;
+cursor:pointer;
+padding:4px;
+background-color:red;
+color:#fff;
+}

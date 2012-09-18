@@ -105,4 +105,19 @@ class PagesController < ApplicationController
       @menu=Menu.all
       @submenu=Submenu.all
   end
+  
+  def calendar
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+   def staffstudentmail
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
+  
+  def sitemap
+      @menu=Menu.all
+      @submenu=Submenu.all
+  end
 end
