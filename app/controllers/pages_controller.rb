@@ -44,6 +44,8 @@ class PagesController < ApplicationController
   end
   
   def lifedcma
+      @menu=Menu.all
+    @submenu=Submenu.all
   end
 
   def feedback

@@ -92,5 +92,6 @@ width:115px;
 
 .form_submit{
 float:left;
-margin:20px 0 0 0;
+margin:20px 0 0 115px;
+cursor:pointer;
 }
