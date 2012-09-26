@@ -58,7 +58,8 @@ float:left;
 #navigation_content ul li a{
 color:#fff;
 padding:0px 10px;
-font: 12px geneva, arial, helvetica, sans-serif;
+font-size: 12px;
+font-family: 'Helvetica Neue',Helvetica,Arial,Sans-Serif; 
 display:block;
 border-right:1px solid #000;
 margin:16px 0 12px 0;
@@ -79,13 +80,18 @@ width:16px;
 height:16px;
 float:right;
 position:relative;
-bottom:20px;
+bottom:18px;
 left:-5px;
+background:url("search-bg.gif")no-repeat right;
 }
 
 .search{
 float:right;
 width:150px;
+border:none;
+border-radius:7px;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
 }
 
 #sub_nav{

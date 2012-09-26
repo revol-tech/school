@@ -14,11 +14,5 @@
   var companyMarker = new google.maps.Marker({
       position: companyPos,
       map: map,
-     
-
-
- 
-
-
   });
 }

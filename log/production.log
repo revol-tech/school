@@ -288,3 +288,13 @@ Compiled application.js  (233ms)  (pid 20519)
 Compiled active_admin.css  (1733ms)  (pid 20519)
 Compiled application.css  (0ms)  (pid 20519)
 >>>>>>> remaining pages
+Connecting to database specified by database.yml
+Compiled active_admin.js  (0ms)  (pid 4476)
+Compiled jquery.js  (4ms)  (pid 4476)
+Compiled jquery_ujs.js  (0ms)  (pid 4476)
+Compiled app.js  (2ms)  (pid 4476)
+Connecting to database specified by database.yml
+Compiled active_admin.js  (0ms)  (pid 4513)
+Compiled jquery.js  (4ms)  (pid 4513)
+Compiled jquery_ujs.js  (0ms)  (pid 4513)
+Compiled app.js  (2ms)  (pid 4513)
