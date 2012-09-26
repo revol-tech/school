@@ -1,5 +1,6 @@
 /tmp
-/log
+/log/
+log/*
 /.bundle
 /db/*.sqlite3
 /public/assets
