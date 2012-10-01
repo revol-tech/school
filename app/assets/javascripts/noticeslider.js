@@ -1,14 +1,14 @@
 $(function(){
 
-	$('#slider').bxSlider({
+	$('#noticeslider').bxSlider({
 							mode		:'horizontal',
 
 							infiniteLoop:'true',
-							speed		:10000,
+							speed		:40000,
 							auto		:true,
 							autoStart	:true,
 							autoHover	:true,
-							autoDirection:'next',
+							autoDirection:'prev',
 							//autoDirection:'next',
 							pause		:0,
 							easing: 'linear',
